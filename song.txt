@@ -1,26 +1,26 @@
-Краткая инструкция по работе с GIT.
+Brief instructions for working with GIT.
 _______________________________________
 
-1.Создаём репозиторий на github
-2.Клонируем его с помощью SSH key or HTTPS
-3.Переходим в папку в которую нужно склонировать проект(команда cd)
-4.Чтобы склонировать вводим команду git clone и далее SSH key (именно публичный ключ!!!)
-   (Команда вставить в git bush - SHIFT + INSERT)
+1.Create a repository on github
+2. Clone it with SSH key or HTTPS
+3.Go to the folder where you want to clone the project (command cd)
+4. To clone, enter the git clone command and then SSH key (namely, the public key !!!)
+   (Command to insert into git bush - SHIFT + INSERT)
 
-Далее git bush спросит разрешение к подключению к хосту github.com. Вводим yes
-Далее будет запрос пароля. Вводим его.
+Next, git bush will ask permission to connect to the github.com host. Enter yes
+Next, you will be asked for a password. We enter it.
 
-Можем убедиться что создалась директория tast_qa  и если мы в неё перейдём (cd test_qa/)то увидим флажёк master или main.
+We can make sure that the tast_qa directory has been created, and if we go into it (cd test_qa), we will see the master or main flag.
 
-И чтобы убедиться что это именно github а не какой-то другой хостинг введём команду
+And to make sure that this is github and not some other hosting, enter the command
 git remote -v
 
 
-Следующее что нужно сделать это создать файл и поместить информацию в этот файл.
-1.Создаём файл (это файл song.txt) и делаем в нём изменения.
-2.Возвращаемся в git bush и вызываем команду git status. После чего git скажет нам о том что в текущей папке появился новый файл song.txt и предложит добавить его в коммит(add .)
-3.Добавляем файл в коммит командой git add song.txt
-4.Вызываем git status ещё раз и видим что song.txt подсвечивается зелёным. 
-5.Делаем непосредственно коммит git commit -m "тут прописываем название нашего коммита"
-6.Команда git log покажет историю коммитов.
-7.И осталось только синхронизировать свой локальный репозиторий с удалённым (залить все изменения на github) команда git push
+The next thing to do is create a file and put the information in that file.
+1.Create a file (this is the song.txt file) and make changes in it.
+2. We return to the git bush and call the git status command. After that, git will tell us that a new song.txt file has appeared in the current folder and offer to add it to the commit (add .)
+3. Add the file to the commit with the command git add song.txt
+4. We call git status again and we see that song.txt is highlighted in green.
+5.Make a commit directly git commit -m "here we write the name of our commit"
+6. The git log command will show the commit history.
+7. And it remains only to synchronize your local repository with the remote one (upload all changes to github) git push command
