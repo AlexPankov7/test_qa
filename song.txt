@@ -1,5 +1,7 @@
 Brief instructions for working with GIT.
 _______________________________________
+____________________________________
+
 
 1.Create a repository on github
 2. Clone it with SSH key or HTTPS
